@@ -30,7 +30,8 @@
 LBFGS_EXTERN_C_BEGIN
 
 
-struct lbfgs_parameter {
+struct lbfgs_parameter
+{
     lbfgs_float tolerance;
     uint64_t upper_iter;
     line_search_parameter *line_search_parameter;

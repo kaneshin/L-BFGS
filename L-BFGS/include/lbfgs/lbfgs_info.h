@@ -28,7 +28,8 @@
 LBFGS_EXTERN_C_BEGIN
 
 
-struct lbfgs_info {
+struct lbfgs_info
+{
     void (*print)(uint64_t iter, lbfgs_dim n, lbfgs_float *x, lbfgs_float *f, lbfgs_parameter *param);
 };
 typedef struct lbfgs_info lbfgs_info;

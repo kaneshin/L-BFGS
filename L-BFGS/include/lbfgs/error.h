@@ -27,11 +27,12 @@
 
 LBFGS_EXTERN_C_BEGIN
 
-enum lbfgs_status
+enum lbfgs_error
 {
     LBFGS_ERROR_SUCCESS = 0,
     LBFGS_ERROR_FAILURE = 1000,
 };
+typedef enum lbfgs_error lbfgs_error;
 
 
 LBFGS_EXTERN_C_END

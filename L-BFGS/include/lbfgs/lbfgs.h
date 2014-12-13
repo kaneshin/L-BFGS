@@ -33,7 +33,8 @@
 LBFGS_EXTERN_C_BEGIN
 
 
-lbfgs_status lbfgs(
+lbfgs_status lbfgs
+(
     lbfgs_dim n,
     lbfgs_float *x,
     lbfgs_float *f,

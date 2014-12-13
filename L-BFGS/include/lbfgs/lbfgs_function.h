@@ -28,7 +28,8 @@
 LBFGS_EXTERN_C_BEGIN
 
 
-struct lbfgs_function {
+struct lbfgs_function
+{
     lbfgs_float (*value)(lbfgs_dim, const lbfgs_float *);
     void (*gradient)(lbfgs_dim, lbfgs_float *, const lbfgs_float *);
 };

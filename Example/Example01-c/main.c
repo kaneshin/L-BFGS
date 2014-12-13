@@ -1,10 +1,4 @@
-//
-//  main.c
-//  Driver-C
-//
-//  Created by Shintaro Kaneko on 12/13/14.
-//  Copyright (c) 2014 Shintaro Kaneko. All rights reserved.
-//
+// main.c
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -70,6 +64,6 @@ int main(int argc, const char * argv[])
         x = NULL;
     }
     lbfgs_function_destroy(func);
-
+    
     return 0;
 }

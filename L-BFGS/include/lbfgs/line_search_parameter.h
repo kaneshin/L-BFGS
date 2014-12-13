@@ -28,7 +28,8 @@
 LBFGS_EXTERN_C_BEGIN
 
 
-struct line_search_parameter {
+struct line_search_parameter
+{
 };
 typedef struct line_search_parameter line_search_parameter;
 

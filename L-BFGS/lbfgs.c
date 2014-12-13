@@ -23,7 +23,8 @@
 #include "include/lbfgs/lbfgs.h"
 
 
-lbfgs_status lbfgs(
+lbfgs_status lbfgs
+(
     lbfgs_dim n,
     lbfgs_float *x,
     lbfgs_float *f,

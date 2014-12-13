@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		796D80F81A3C40FB00259F26 /* liblbfgs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 796D80F61A3C403300259F26 /* liblbfgs.a */; };
-		797D79CC1A335C1700FC9C93 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 797D79CB1A335C1700FC9C93 /* main.c */; };
+		797C9DC51A3C65AF0053B2DD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 797C9DC41A3C65AF0053B2DD /* main.c */; };
+		797C9DCA1A3C664A0053B2DD /* liblbfgs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 797C9DC91A3C664A0053B2DD /* liblbfgs.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		797D79C61A335C1700FC9C93 /* CopyFiles */ = {
+		797C9DC01A3C65AF0053B2DD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,68 +24,36 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		796D80EE1A3C403300259F26 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
-		796D80EF1A3C403300259F26 /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
-		796D80F01A3C403300259F26 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
-		796D80F11A3C403300259F26 /* lbfgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbfgs.h; sourceTree = "<group>"; };
-		796D80F21A3C403300259F26 /* line_search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = line_search.h; sourceTree = "<group>"; };
-		796D80F31A3C403300259F26 /* status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = status.h; sourceTree = "<group>"; };
-		796D80F41A3C403300259F26 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
-		796D80F51A3C403300259F26 /* lbfgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lbfgs.h; sourceTree = "<group>"; };
-		796D80F61A3C403300259F26 /* liblbfgs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblbfgs.a; sourceTree = "<group>"; };
-		797D79C81A335C1700FC9C93 /* Example01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Example01; sourceTree = BUILT_PRODUCTS_DIR; };
-		797D79CB1A335C1700FC9C93 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		797C9DC21A3C65AF0053B2DD /* Example01-c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Example01-c"; sourceTree = BUILT_PRODUCTS_DIR; };
+		797C9DC41A3C65AF0053B2DD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		797C9DC91A3C664A0053B2DD /* liblbfgs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblbfgs.a; path = "../../../../Library/Developer/Xcode/DerivedData/L-BFGS-chncidfixdfdujajqtwqlyvjnlij/Build/Products/Debug/liblbfgs.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		797D79C51A335C1700FC9C93 /* Frameworks */ = {
+		797C9DBF1A3C65AF0053B2DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				796D80F81A3C40FB00259F26 /* liblbfgs.a in Frameworks */,
+				797C9DCA1A3C664A0053B2DD /* liblbfgs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		796D80EB1A3C403300259F26 /* Vendor */ = {
+		797C9DC31A3C65AF0053B2DD /* Example01-c */ = {
 			isa = PBXGroup;
 			children = (
-				796D80EC1A3C403300259F26 /* lbfgs */,
+				797C9DC41A3C65AF0053B2DD /* main.c */,
 			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
-		796D80EC1A3C403300259F26 /* lbfgs */ = {
-			isa = PBXGroup;
-			children = (
-				796D80ED1A3C403300259F26 /* lbfgs */,
-				796D80F51A3C403300259F26 /* lbfgs.h */,
-				796D80F61A3C403300259F26 /* liblbfgs.a */,
-			);
-			path = lbfgs;
-			sourceTree = "<group>";
-		};
-		796D80ED1A3C403300259F26 /* lbfgs */ = {
-			isa = PBXGroup;
-			children = (
-				796D80EE1A3C403300259F26 /* base.h */,
-				796D80EF1A3C403300259F26 /* defines.h */,
-				796D80F01A3C403300259F26 /* error.h */,
-				796D80F11A3C403300259F26 /* lbfgs.h */,
-				796D80F21A3C403300259F26 /* line_search.h */,
-				796D80F31A3C403300259F26 /* status.h */,
-				796D80F41A3C403300259F26 /* util.h */,
-			);
-			path = lbfgs;
+			path = "Example01-c";
 			sourceTree = "<group>";
 		};
 		797D79BA1A335BD300FC9C93 = {
 			isa = PBXGroup;
 			children = (
-				796D80EB1A3C403300259F26 /* Vendor */,
-				797D79CA1A335C1700FC9C93 /* Example01 */,
+				797C9DC91A3C664A0053B2DD /* liblbfgs.a */,
+				797C9DC31A3C65AF0053B2DD /* Example01-c */,
 				797D79C91A335C1700FC9C93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,37 +61,29 @@
 		797D79C91A335C1700FC9C93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				797D79C81A335C1700FC9C93 /* Example01 */,
+				797C9DC21A3C65AF0053B2DD /* Example01-c */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		797D79CA1A335C1700FC9C93 /* Example01 */ = {
-			isa = PBXGroup;
-			children = (
-				797D79CB1A335C1700FC9C93 /* main.c */,
-			);
-			path = Example01;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		797D79C71A335C1700FC9C93 /* Example01 */ = {
+		797C9DC11A3C65AF0053B2DD /* Example01-c */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 797D79CF1A335C1700FC9C93 /* Build configuration list for PBXNativeTarget "Example01" */;
+			buildConfigurationList = 797C9DC61A3C65AF0053B2DD /* Build configuration list for PBXNativeTarget "Example01-c" */;
 			buildPhases = (
-				797D79C41A335C1700FC9C93 /* Sources */,
-				797D79C51A335C1700FC9C93 /* Frameworks */,
-				797D79C61A335C1700FC9C93 /* CopyFiles */,
+				797C9DBE1A3C65AF0053B2DD /* Sources */,
+				797C9DBF1A3C65AF0053B2DD /* Frameworks */,
+				797C9DC01A3C65AF0053B2DD /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Example01;
-			productName = Example01;
-			productReference = 797D79C81A335C1700FC9C93 /* Example01 */;
+			name = "Example01-c";
+			productName = "Example01-c";
+			productReference = 797C9DC21A3C65AF0053B2DD /* Example01-c */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -134,8 +94,8 @@
 			attributes = {
 				LastUpgradeCheck = 0610;
 				TargetAttributes = {
-					797D79C71A335C1700FC9C93 = {
-						CreatedOnToolsVersion = 6.1;
+					797C9DC11A3C65AF0053B2DD = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
@@ -151,36 +111,24 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				797D79C71A335C1700FC9C93 /* Example01 */,
+				797C9DC11A3C65AF0053B2DD /* Example01-c */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		797D79C41A335C1700FC9C93 /* Sources */ = {
+		797C9DBE1A3C65AF0053B2DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797D79CC1A335C1700FC9C93 /* main.c in Sources */,
+				797C9DC51A3C65AF0053B2DD /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		797D79BF1A335BD300FC9C93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		797D79C01A335BD300FC9C93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		797D79CD1A335C1700FC9C93 /* Debug */ = {
+		797C9DC71A3C65AF0053B2DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -215,27 +163,22 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor/**",
 					/Applications/Xcode/Xcode6.1.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../L-BFGS/include/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor/lbfgs",
-					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/L-BFGS-chncidfixdfdujajqtwqlyvjnlij/Build/Products/Debug",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		797D79CE1A335C1700FC9C93 /* Release */ = {
+		797C9DC81A3C65AF0053B2DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -265,42 +208,48 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor/**",
 					/Applications/Xcode/Xcode6.1.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/../L-BFGS/include/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor/lbfgs",
-					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/L-BFGS-chncidfixdfdujajqtwqlyvjnlij/Build/Products/Debug",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		797D79BF1A335BD300FC9C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		797D79C01A335BD300FC9C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		797C9DC61A3C65AF0053B2DD /* Build configuration list for PBXNativeTarget "Example01-c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797C9DC71A3C65AF0053B2DD /* Debug */,
+				797C9DC81A3C65AF0053B2DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		797D79BE1A335BD300FC9C93 /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				797D79BF1A335BD300FC9C93 /* Debug */,
 				797D79C01A335BD300FC9C93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		797D79CF1A335C1700FC9C93 /* Build configuration list for PBXNativeTarget "Example01" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				797D79CD1A335C1700FC9C93 /* Debug */,
-				797D79CE1A335C1700FC9C93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
