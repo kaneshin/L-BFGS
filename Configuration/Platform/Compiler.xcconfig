@@ -1,0 +1,49 @@
+// Compiler.xcconfig
+//
+// Copyright (c) 2014 Shintaro Kaneko
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+
+// Don't warn on implicit property synthesis
+//CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO
+
+// Treat warnings as errors
+//GCC_TREAT_WARNINGS_AS_ERRORS = YES
+//CLANG_WARN_CONSTANT_CONVERSION = YES
+//CLANG_WARN_ENUM_CONVERSION = YES
+//CLANG_WARN_INT_CONVERSION = YES
+//CLANG_WARN__DUPLICATE_METHOD_MATCH = YES
+//CLANG_WARN_BOOL_CONVERSION = YES
+//CLANG_WARN_EMPTY_BODY = YES
+//GCC_WARN_UNINITIALIZED_AUTOS = YES
+//GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO
+//GCC_WARN_UNUSED_FUNCTION = YES
+
+// Silence Eigen warnings
+//GCC_WARN_SHADOW = NO
+
+// Enable C++11 support
+//CLANG_CXX_LANGUAGE_STANDARD = c++11
+//CLANG_CXX_LIBRARY = libc++
+
+// Enable ARC
+CLANG_ENABLE_OBJC_ARC = YES
+
+// Allow #import'ing code generated headers from DERIVED_FILE_DIR.
+//HEADER_SEARCH_PATHS = $(inherited) $(DERIVED_FILE_DIR)

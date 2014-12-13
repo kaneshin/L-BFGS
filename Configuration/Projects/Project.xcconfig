@@ -1,0 +1,64 @@
+// Project.xcconfig
+//
+// Copyright (c) 2014 Shintaro Kaneko
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+
+#include "../Base.xcconfig"
+
+SDKROOT = iphoneos
+
+// Build Options
+//GCC_VERSION = com.apple.compilers.llvm.clang.1_0
+
+// Deployment
+TARGETED_DEVICE_FAMILY = 1 // iPhone(1), iPad(2)
+
+// Search Paths
+ALWAYS_SEARCH_USER_PATHS = NO
+//HEADER_SEARCH_PATHS = $(SYMROOT)/Headers
+//FRAMEWORK_SEARCH_PATHS = $(inherited) $(BUILT_PRODUCTS_DIR)
+//LIBRARY_SEARCH_PATHS = $(BUILT_PRODUCTS_DIR) $(inherited)
+
+// Code Generation
+//GCC_DYNAMIC_NO_PIC = NO
+//GCC_INLINES_ARE_PRIVATE_EXTERN = YES
+//GCC_SYMBOLS_PRIVATE_EXTERN = NO
+
+// Language
+GCC_C_LANGUAGE_STANDARD = gnu99
+CLANG_ENABLE_OBJC_ARC = YES
+//GCC_PRECOMPILE_PREFIX_HEADER = YES
+//GCC_PREFIX_HEADER = $(TARGET_NAME)/$(TARGET_NAME)-Prefix.pch
+
+// Warnings
+//GCC_WARN_ABOUT_RETURN_TYPE = YES
+//GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES
+//GCC_WARN_MISSING_PARENTHESES = YES
+//GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES
+//GCC_WARN_SHADOW = YES
+GCC_WARN_UNUSED_VARIABLE = YES
+GCC_WARN_UNUSED_FUNCTION = YES
+//CLANG_WARN_CXX0X_EXTENSIONS = NO
+
+// Other swift flags
+SHARED_OTHER_SWIFT_FLAGS =
+
+// CocoaPods Preprocessing
+PODS_GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1 XCODE_VERSION=$(XCODE_VERSION_MAJOR)
